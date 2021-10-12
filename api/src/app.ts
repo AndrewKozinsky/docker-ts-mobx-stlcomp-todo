@@ -29,7 +29,7 @@ const App = express()
 /*App.use('/users', userRouter);
 App.use('/myNotes', myNotesRouter)*/
 App.get('/', (req, res) => {
-    res.send('Hello, Express! 41--')
+    res.send('Hello, Express! 41-')
 })
 
 

@@ -83,12 +83,15 @@ function getResolve() {
 // Функция возвращает значение параметра devtools
 function getDevServerSettings() {
     return {
-        // compress: true,
+        compress: true,
         port: 3000,
         host: '0.0.0.0',
-        // disableHostCheck: true,
         // historyApiFallback: true,
-        hot: true
+        allowedHosts: 'all',
+        hot: false,
+        client: {
+            webSocketURL: 'auto://0.0.0.0:0/ws'
+        },
     }
 }
 

@@ -3,7 +3,7 @@ exports.port = process.env.PORT
 
 // exports.db_username = 'andrew'
 // exports.db_password = '-E8XZ.bq_WAb.uU'
-// exports.db = process.env.MONGO_URL
+exports.db = process.env.MONGO_URL
 
 // exports.jwt_secret = 'geuAFR83_IXfpwx742$QQwfgiut45_cs'
 // exports.jwt_expires_in = '90d'

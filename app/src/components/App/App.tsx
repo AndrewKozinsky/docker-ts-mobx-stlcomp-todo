@@ -22,7 +22,7 @@ export default function App() {
 // Use Title and Wrapper like any other React component – except they're styled!
     return(
         <Wrapper>
-            1231
+            123
             {/*<Switch>
                 <Route path='/' exact>
                     <MainPage />

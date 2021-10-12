@@ -1,7 +1,7 @@
 server {
   listen 80;
   listen 443;
-  server_name todo.andrewkozinsky.ru;
+  server_name todo.editorium.net;
 
   location /test {
       return 200 "Everything is OK";

@@ -1,6 +1,5 @@
 const config = require('./config.ts')
-console.log(process.env.MODE)
-// const { connectDb } = require('./utils/db')
+const { connectDb } = require('./utils/db.ts')
 
 // Выключение сервера при ошибке типа uncaughtException
 process.on('uncaughtException', err => {
@@ -9,10 +8,10 @@ process.on('uncaughtException', err => {
     process.exit(1)
 })
 
-// connectDb()
-//     .on('error', console.log)
-//     .on('disconnected', connectDb)
-//     .once('open', startServer)
+connectDb()
+    .on('error', console.log)
+    .on('disconnected', connectDb)
+    .once('open', startServer)
 
 
 function startServer() {
@@ -34,6 +33,3 @@ function startServer() {
         })
     })
 }
-
-// После удали строку ниже
-startServer()
