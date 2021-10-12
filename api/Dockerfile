@@ -1,0 +1,4 @@
+FROM node:12.18.3-alpine3.10
+WORKDIR /app
+COPY . .
+RUN npm install
